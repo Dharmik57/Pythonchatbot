@@ -4,7 +4,7 @@ from chatterbot.trainers import ListTrainer  # method to train the chatbot
 bot = ChatBot('MyChatBot')
 trainer = ListTrainer(bot)
 # bot.set_trainer(ListTrainer)       #set the trainer
-conversation = open('intents.json','r').readlines()
+conversation = open('chats.txt','r').readlines()
 trainer.train(conversation)
 
 print('Type something to begin...')
