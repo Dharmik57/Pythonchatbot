@@ -7,7 +7,7 @@ trainer = ListTrainer(bot)
 conversation = open('chats.txt','r').readlines()
 trainer.train(conversation)
 
-print('Type something to begin...')
+print('Greetings From Grocery Shop...Type Hello to begin')
 while True:
     message = input('You:')
     if message.strip()!= 'Bye':
